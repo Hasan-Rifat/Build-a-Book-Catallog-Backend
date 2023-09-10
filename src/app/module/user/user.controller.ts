@@ -5,7 +5,7 @@ import sendResponse from '../../../shared/sendResponse';
 import { userServices } from './user.services';
 
 const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
-  const result = userServices.getAllFromDB();
+  const result = await userServices.getAllFromDB();
 
   sendResponse(res, {
     success: true,
@@ -16,7 +16,7 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getByIdFromDB = catchAsync(async (req: Request, res: Response) => {
-  const result = userServices.getByIdFromDB(req.params.id);
+  const result = await userServices.getByIdFromDB(req.params.id);
 
   sendResponse(res, {
     success: true,
@@ -27,7 +27,7 @@ const getByIdFromDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const updateIntoDB = catchAsync(async (req: Request, res: Response) => {
-  const result = userServices.updateIntoDB(req.params.id, req.body);
+  const result = await userServices.updateIntoDB(req.params.id, req.body);
 
   sendResponse(res, {
     success: true,
@@ -38,7 +38,7 @@ const updateIntoDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
-  const result = userServices.deleteFromDB(req.params.id);
+  const result = await userServices.deleteFromDB(req.params.id);
 
   sendResponse(res, {
     success: true,
@@ -49,7 +49,8 @@ const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getProfile = catchAsync(async (req: Request, res: Response) => {
-  const result = userServices.getByIdFromDB(req.params.id);
+  const userId = req.user?.id;
+  const result = await userServices.getProfile(userId);
 
   sendResponse(res, {
     success: true,
@@ -64,4 +65,5 @@ export const UserController = {
   getByIdFromDB,
   updateIntoDB,
   deleteFromDB,
+  getProfile,
 };

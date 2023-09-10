@@ -1,13 +1,13 @@
 import { User } from '@prisma/client';
 import { prisma } from '../../../shared/prisma';
 
-const getAllFromDB = (): Promise<User[]> => {
-  const result = prisma.user.findMany();
+const getAllFromDB = async (): Promise<User[]> => {
+  const result = await prisma.user.findMany();
   return result;
 };
 
-const getByIdFromDB = (id: string): Promise<User | null> => {
-  const result = prisma.user.findUnique({
+const getByIdFromDB = async (id: string): Promise<User | null> => {
+  const result = await prisma.user.findUnique({
     where: {
       id: id,
     },
@@ -15,8 +15,8 @@ const getByIdFromDB = (id: string): Promise<User | null> => {
   return result;
 };
 
-const updateIntoDB = (id: string, user: User): Promise<User> => {
-  const result = prisma.user.update({
+const updateIntoDB = async (id: string, user: User): Promise<User> => {
+  const result = await prisma.user.update({
     where: {
       id: id,
     },
@@ -25,10 +25,19 @@ const updateIntoDB = (id: string, user: User): Promise<User> => {
   return result;
 };
 
-const deleteFromDB = (id: string): Promise<User> => {
-  const result = prisma.user.delete({
+const deleteFromDB = async (id: string): Promise<User> => {
+  const result = await prisma.user.delete({
     where: {
       id: id,
+    },
+  });
+  return result;
+};
+
+const getProfile = async (id: string): Promise<User | null> => {
+  const result = await prisma.user.findUnique({
+    where: {
+      id,
     },
   });
   return result;
@@ -39,4 +48,5 @@ export const userServices = {
   getByIdFromDB,
   updateIntoDB,
   deleteFromDB,
+  getProfile,
 };
