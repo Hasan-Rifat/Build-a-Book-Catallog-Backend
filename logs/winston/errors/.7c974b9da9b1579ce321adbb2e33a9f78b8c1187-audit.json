@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/mnt/2ED6AF4CD6AF12DF/0_Job/all prectiess/jonkar vai/New/assignment/next lvl 2.0/Assignment 8/logs/winston/errors/.7c974b9da9b1579ce321adbb2e33a9f78b8c1187-audit.json",
+    "files": [
+        {
+            "date": 1694342313761,
+            "name": "/mnt/2ED6AF4CD6AF12DF/0_Job/all prectiess/jonkar vai/New/assignment/next lvl 2.0/Assignment 8/logs/winston/errors/phu-2023-10-09-16-error.log",
+            "hash": "4334de6999a55722a7fe7792479de80041bf624b68b5389bb72deabaeb4cb19e"
+        },
+        {
+            "date": 1694343778796,
+            "name": "/mnt/2ED6AF4CD6AF12DF/0_Job/all prectiess/jonkar vai/New/assignment/next lvl 2.0/Assignment 8/logs/winston/errors/phu-2023-10-09-17-error.log",
+            "hash": "04cd204ba4a98a23af1539ff7eb09897c239b6dee9cb33ec93b7adcb8794aaab"
+        },
+        {
+            "date": 1694350374795,
+            "name": "/mnt/2ED6AF4CD6AF12DF/0_Job/all prectiess/jonkar vai/New/assignment/next lvl 2.0/Assignment 8/logs/winston/errors/phu-2023-10-09-18-error.log",
+            "hash": "52645eea8ac66a0aa390035b94c47a36f6558abf9cd83e479556eb6096154a51"
+        },
+        {
+            "date": 1694350815915,
+            "name": "/mnt/2ED6AF4CD6AF12DF/0_Job/all prectiess/jonkar vai/New/assignment/next lvl 2.0/Assignment 8/logs/winston/errors/phu-2023-10-09-19-error.log",
+            "hash": "64313f329a6983d92f70b809af5634a168b588ce6bf61fbceb9afc882d6bbb37"
+        }
+    ],
+    "hashType": "sha256"
+}
