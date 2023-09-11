@@ -1,9 +1,0 @@
-Sun Sep 10 2023 19:58:46 } [PH] error: 
-Invalid `prisma.user.create()` invocation in
-/mnt/2ED6AF4CD6AF12DF/0_Job/all prectiess/jonkar vai/New/assignment/next lvl 2.0/Assignment 8/src/app/module/auth/auth.services.ts:7:36
-
-  4 
-  5 const insertIntoDB = async (data: User): Promise<User> => {
-  6   data.password = bcrypt.hashSync(data.password, 12);
-→ 7   const result = await prisma.user.create(
-Unique constraint failed on the fields: (`email`)
