@@ -43,9 +43,9 @@ model Book {
   id              String   @id @default(uuid())
   title           String
   author          String
-  price           Float
+  price           Int
   genre           String
-  publicationDate DateTime
+  publicationDate String
   category        Category @relation(fields: [categoryId], references: [id])
   categoryId      String
 
