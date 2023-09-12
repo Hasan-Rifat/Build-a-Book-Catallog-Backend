@@ -5,6 +5,7 @@
 #### User
 
 - api/v1/auth/signup (POST)
+- api/v1/auth/login (POST)
 - api/v1/users (GET)
 - api/v1/users/bea2cf9f-2f4d-41d6-adc1-6cbc9850c673 (Single GET) Include an id that is saved in your database
 - api/v1/users/bea2cf9f-2f4d-41d6-adc1-6cbc9850c673 (PATCH)
