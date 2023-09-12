@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/mnt/2ED6AF4CD6AF12DF/0_Job/all prectiess/jonkar vai/New/assignment/next lvl 2.0/Assignment 8/logs/winston/successes/.351272508d00f39809fad0559a41930bbf9427fa-audit.json",
+    "files": [
+        {
+            "date": 1694534011890,
+            "name": "/mnt/2ED6AF4CD6AF12DF/0_Job/all prectiess/jonkar vai/New/assignment/next lvl 2.0/Assignment 8/logs/winston/successes/phu-2023-12-09-21-success.log",
+            "hash": "efa0d1190616e008cbb04eb156f645b51c7d8aa3d1b4b07867af15130995c294"
+        },
+        {
+            "date": 1694534404928,
+            "name": "/mnt/2ED6AF4CD6AF12DF/0_Job/all prectiess/jonkar vai/New/assignment/next lvl 2.0/Assignment 8/logs/winston/successes/phu-2023-12-09-22-success.log",
+            "hash": "9c0839a96481a27fe4191f5342aa6e212aa12881dbfa1db8db4275086fec0a4e"
+        }
+    ],
+    "hashType": "sha256"
+}

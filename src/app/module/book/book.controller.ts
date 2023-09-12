@@ -64,7 +64,6 @@ const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
 
 const getByCategoryIdFromDB = catchAsync(
   async (req: Request, res: Response) => {
-    console.log(req.params.categoryId);
     const result = await bookServices.getByCategoryIdFromDB(
       req.params.categoryId
     );

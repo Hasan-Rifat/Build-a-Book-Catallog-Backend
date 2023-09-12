@@ -67,7 +67,6 @@ const deleteFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, v
     });
 }));
 const getByCategoryIdFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log(req.params.categoryId);
     const result = yield book_services_1.bookServices.getByCategoryIdFromDB(req.params.categoryId);
     (0, sendResponse_1.default)(res, {
         success: true,
