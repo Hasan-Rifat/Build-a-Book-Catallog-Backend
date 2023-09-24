@@ -28,7 +28,7 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
   };
 
   res.cookie('refreshToken', refreshToken, cookieOptions);
-
+  console.log(token);
   sendResponse<{
     token: string;
   }>(res, {
