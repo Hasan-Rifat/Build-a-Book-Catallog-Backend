@@ -40,7 +40,7 @@ const loginUser = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void
     (0, sendResponse_1.default)(res, {
         success: true,
         statusCode: http_status_1.default.OK,
-        message: 'User login successfully',
+        message: 'User signin successfully!"',
         token,
     });
 }));

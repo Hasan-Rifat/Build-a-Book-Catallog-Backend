@@ -50,7 +50,6 @@ const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
 
 const getProfile = catchAsync(async (req: Request, res: Response) => {
   const userId = req.user?.userId;
-
   const result = await userServices.getProfile(userId);
 
   sendResponse(res, {

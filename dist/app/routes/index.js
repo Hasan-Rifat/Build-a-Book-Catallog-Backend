@@ -8,10 +8,15 @@ const auth_routes_1 = require("../module/auth/auth.routes");
 const book_routes_1 = require("../module/book/book.routes");
 const category_routes_1 = require("../module/category/category.routes");
 const order_routes_1 = require("../module/order/order.routes");
+const profile_routes_1 = require("../module/profile/profile.routes");
 const user_routes_1 = require("../module/user/user.routes");
 const router = express_1.default.Router();
 const moduleRoutes = [
-    // ... routes
+    // ...
+    {
+        path: '/profile',
+        route: profile_routes_1.ProfileRouter,
+    },
     {
         path: '/users',
         route: user_routes_1.UserRouter,

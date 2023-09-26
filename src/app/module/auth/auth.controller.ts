@@ -34,7 +34,7 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
   }>(res, {
     success: true,
     statusCode: httpStatus.OK,
-    message: 'User login successfully',
+    message: 'User signin successfully!"',
     token,
   });
 });
